@@ -1,0 +1,29 @@
+
+Step:-1
+
+File read startegy:-  
+.bz2 15 files(tbs)  size,security
+.bz2 --split--csv convert-->dataframe-->validation(null,outliers,count of records)
+
+
+Step-2
+
+1.DF1= join model_collateral and model_auth_rep
+
+2.DF2 = join model_collateral and model_config
+
+
+Step-3
+
+ECL computation:
+
+IFRS Stage 1 ECL: EAD*12MONTH PD*LGD
+IFRS Stage 2 ECL: EAD*LIFETIME PD*LGD
+IFRS Stage 3 ECL: EAD*LGD
+
+DATAFRAME=DF1+DF2+DF3,EAD,12PD,LGD,LIFETIME PD
+
+WRITE INTO LOCAL EXCEL
+
+
+
